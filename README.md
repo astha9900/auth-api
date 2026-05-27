@@ -2,6 +2,12 @@
 
 A secure, scalable REST API with JWT authentication, role-based access control (RBAC), rate limiting, and PostgreSQL. Built for real-world use — not just a tutorial.
 
+## 🌐 Live Demo
+
+**[deploy-auth-nine.vercel.app](https://deploy-auth-nine.vercel.app)**
+
+Test the health endpoint: `GET /health`
+
 ## ✨ Features
 
 - **JWT Auth** — Access tokens (15m) + Refresh tokens (7d) with rotation
