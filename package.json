@@ -4,7 +4,8 @@
   "description": "Production-ready REST API with JWT auth, RBAC, and rate limiting",
   "main": "src/index.js",
   "scripts": {
-    "build": "npx prisma generate",
+    "postinstall": "prisma generate",
+    "build": "prisma generate",
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
     "test": "vitest",
