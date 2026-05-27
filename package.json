@@ -4,6 +4,7 @@
   "description": "Production-ready REST API with JWT auth, RBAC, and rate limiting",
   "main": "src/index.js",
   "scripts": {
+    "build": "npx prisma generate",
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
     "test": "vitest",
@@ -15,18 +16,18 @@
   "dependencies": {
     "@prisma/client": "^5.0.0",
     "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-rate-limit": "^7.0.0",
     "helmet": "^7.0.0",
     "jsonwebtoken": "^9.0.0",
     "morgan": "^1.10.0",
-    "swagger-ui-express": "^5.0.0",
+    "prisma": "^5.0.0",
     "winston": "^3.11.0",
     "zod": "^3.22.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.0",
-    "prisma": "^5.0.0",
     "vitest": "^1.0.0"
   }
 }
